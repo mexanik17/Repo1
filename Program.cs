@@ -1,6 +1,6 @@
 ﻿namespace Repo1
 {
-    internal class Program
+    class Programm
     {
         static void Main(string[] args)
         {
@@ -21,7 +21,8 @@
 
         static bool VisokosYear(int year)
         {
-            
+            // Проверяем, делится ли год на 4 без остатка.
+            // Если да, то он високосный, иначе - нет.
             return year % 4 == 0;
         }
     }
