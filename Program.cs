@@ -1,4 +1,4 @@
-﻿namespace Repo1
+﻿namespace Repo2
 {
     class Programm
     {
@@ -16,14 +16,14 @@
                 Console.WriteLine("{0} год - не високосный.", year);
             }
 
-            Console.ReadLine();
         }
 
         static bool VisokosYear(int year)
         {
-            // Проверяем, делится ли год на 4 без остатка.
-            // Если да, то он високосный, иначе - нет.
-            return year % 4 == 0;
+            // Год високосный, если он делится на 4 без остатка,
+            // но при этом не делится на 100 без остатка, или делится на 400 без остатка.
+            return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+
         }
     }
 }
