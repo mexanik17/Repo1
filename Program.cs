@@ -9,11 +9,11 @@
 
             if (VisokosYear(year))
             {
-                Console.WriteLine("{0} год - високосный.", year);
+                Console.WriteLine("{0} год является високосным.", year);
             }
             else
             {
-                Console.WriteLine("{0} год - не високосный.", year);
+                Console.WriteLine("{0} год не является високосным.", year);
             }
 
         }
