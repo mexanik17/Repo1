@@ -1,0 +1,4 @@
+.BuildLogs/
+*.log
+
+!BuildLogs/test.txt
